@@ -1,0 +1,16 @@
+def compte_occurrences(caractere, mot):
+    m = []
+    for i in mot:
+        if i == caractere  :
+            m.append(i)
+    return len(m)
+    
+    
+
+
+
+
+
+assert compte_occurrences("e", "sciences") == 2
+assert compte_occurrences("i", "mississippi") == 4
+assert compte_occurrences("a", "mississippi") == 0
