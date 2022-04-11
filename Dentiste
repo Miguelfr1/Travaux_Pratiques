@@ -1,0 +1,13 @@
+VOYELLES = ['a', 'e', 'i', 'o', 'u', 'y']
+
+def dentiste(texte):
+    nv_txt= ''
+    
+    for i in texte :
+        if i in VOYELLES :
+            nv_txt += i
+    return nv_txt
+    
+assert dentiste("j'ai mal") == 'aia'
+assert dentiste("il fait chaud") == 'iaiau'
+assert dentiste("") == ''
