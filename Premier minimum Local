@@ -1,0 +1,21 @@
+def indice_arret(hauteurs):
+    m = 0
+    for i in range (len(hauteurs)-1) :
+        if hauteurs[i] >= hauteurs[i + 1] :
+            i += 1
+        else :
+            return i
+    return i
+            
+            
+
+
+# Tests
+hauteurs = [3, 2, 5]
+assert indice_arret(hauteurs) == 1
+
+hauteurs = [3, 5]
+assert indice_arret(hauteurs) == 0
+
+hauteurs = [10, 8, 7, 5, 5, 4, 3, 6, 6, 5, 4, 12]
+assert indice_arret(hauteurs) == 6
