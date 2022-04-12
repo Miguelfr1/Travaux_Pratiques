@@ -1,0 +1,17 @@
+def nb_batiments_eclaires(hauteurs):
+    m = 0
+    nvelle_liste = []
+    for i in hauteurs:
+        if i > m :
+            m = i
+            nvelle_liste.append(m)
+            
+            
+            
+    return len(nvelle_liste)
+
+
+# tests
+
+assert 4 == nb_batiments_eclaires([2, 1, 2, 4, 0, 4, 5, 3, 5, 6])
+assert 1 == nb_batiments_eclaires([0, 3, 1, 2])
