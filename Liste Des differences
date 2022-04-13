@@ -1,0 +1,24 @@
+def differences(source_1, source_2):
+    m =[]
+    if source_1 == [] :
+        return []
+    for i in range(len(source_1)) :
+        if source_1[i] == source_2[i] :
+            m.append(False)
+        else : 
+            m.append(True)
+    return m
+        
+        
+    
+
+
+
+# tests
+
+assert differences([14, 87, 22, 5, 65],
+                   [14, 86, 27, 5, 65]) == [False, True, True, False, False]
+
+assert differences([-54], [-54]) == [False]
+assert differences([7, 8], [7, 11]) == [False, True]
+assert differences([], []) == []
