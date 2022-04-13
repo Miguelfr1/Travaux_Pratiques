@@ -1,0 +1,22 @@
+def gelees(temperatures):
+    liste = []
+    if temperatures == [] :
+        return 0
+    for i in range(len(temperatures)) : 
+        if temperatures[i] <= 0 :
+            liste.append(i)
+    for i in range (len(liste)-1) :
+        if liste[i+1] != liste[i] + 1 :
+            liste.remove(liste[i+1])
+    
+    return len(liste)
+            
+            
+
+
+
+
+# Tests
+assert gelees([2, -3, -2, 0, 1, -1]) == 3
+assert gelees([3, 2, 2]) == 0
+assert gelees([]) == 0
