@@ -1,0 +1,11 @@
+def occurence_lettres(phrase : str) :
+    d = {}
+    for i in phrase : 
+        if i in d :
+            d[i] += 1
+        else :
+            d[i] = 1
+    return d
+
+    
+occurence_lettres('Hello world !')
