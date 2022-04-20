@@ -1,0 +1,11 @@
+def conv_bin(n) :
+    b = []
+    bit = 0
+    while n != 0 :
+        b.append(n%2) 
+        n = n//2
+        bit += 1
+    b.reverse()
+    return b, bit
+        
+conv_bin(9)
